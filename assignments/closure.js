@@ -4,6 +4,16 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+function myClosure(num1, num2) {
+  let result = num1 + num2;
+
+  function multiple10() {
+    console.log(10 * result);
+  }
+  multiple10();
+}
+myClosure(5,10);
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
